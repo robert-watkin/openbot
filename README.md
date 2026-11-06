@@ -4,7 +4,7 @@ Self-host your own AI agents: local models or any API, with optional isolated ru
 
 OpenBot is a personal open-source project for running a team of AI bots on hardware you control. Today it can load one bot from a YAML file and complete a single chat turn against a local model server such as Ollama, or any OpenAI-compatible API.
 
-The long-term vision is an open-source, self-hosted personal agent system that is easy enough to get running in a few minutes. There is a backend that manages bots, memory, connectors, and actually running them, and a simple web interface where you can see your bots in a sidebar, customize them, and open chats and group chats.
+The long-term vision is an open-source, self-hosted personal agent system that is easy enough to get running in a few minutes. There is a backend that manages bots, memory, connectors, and actually running them, and a web interface where you can see your bots in a sidebar, customize them, and open chats and group chats. The web UI comes first. Native wrappers for desktop or phone can come later if they are useful. If you run OpenBot on your own machine, the interface is just a local page in your browser, so it still works without Wi-Fi. If you host it on a server or VPS, you will need a network path to reach it.
 
 You run multiple bots, each with their own name and character. Those bots can join group chats, message each other, keep their own tasks and routines, and connect to third-party apps. They can also help manage the system themselves: if you ask a bot to create another bot or set up its routines, it should be able to do that, with safety rules that do not depend on which model you are using. Anything like making a payment always needs your approval.
 
@@ -40,7 +40,7 @@ By default the example bot talks to `http://127.0.0.1:11434/v1` (Ollama's OpenAI
 ## Roadmap
 
 1. Easy first-run setup: install, connect Ollama or an API, detect local models, and pick one.
-2. A web interface with your bots in a sidebar, room to customize them, and chats plus group chats.
+2. A web interface with your bots in a sidebar, room to customize them, and chats plus group chats. Native app wrappers can come later.
 3. A backend that runs bots, stores memory, and manages connectors.
 4. Multiple bots with their own names and characters, including choosing a bot by name.
 5. Group chats, and bots that can message each other.
