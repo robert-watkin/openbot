@@ -1,0 +1,9 @@
+/openbot
+/bin/
+.env
+*.exe
+.DS_Store
+.idea/
+.vscode/
+vendor/
+coverage.out
